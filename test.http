@@ -1,0 +1,81 @@
+POST  http://localhost:5000/api/user/register
+Content-Type: application/json
+
+{
+    "username":"minh",
+    "password":"123" ,
+    "email":"m@gmail.com" 
+}
+
+###
+POST  http://localhost:5000/api/review/addReview
+Content-Type: application/json
+
+{
+    "star": 5,
+            "comment": "comment",
+            "productId": "productId",
+            "userName": "userName"
+}
+
+### 
+POST  http://localhost:5000/api/product/up
+Content-Type: application/json
+
+{
+    
+}
+
+
+# ================================================================================================
+###
+POST  http://localhost:5000/api/cart/
+Content-Type: application/json
+
+{
+    "userId":"62601d54ca42e3a588918f0b"
+}
+
+###
+GET   http://localhost:5000/api/product/name
+Content-Type: application/json
+
+{
+    
+}
+###
+GET   http://localhost:5000/api/image/
+Content-Type: application/json
+
+{
+    
+}
+
+###
+PUT   http://localhost:5000/api/product/updateQuantity/6290a3aca8cf30a862e0a5a9
+Content-Type: application/json
+
+{ 
+    "quantity": 1
+}
+
+###
+DELETE   http://localhost:5000/api/review/62a0db32f189a8a25e417b70
+
+
+###
+POST  http://localhost:5000/api/order/addOrder
+Content-Type: application/json
+
+{
+    "userID": "userID",
+    "userName": "userName",
+    "Address": "Address",
+    "phoneNumber": "phoneNumber",
+    "payType": 1,
+    "total": 1,
+    "state": 2,
+    "description": "description",
+      "ListProductID":"ListProductID"       
+}
+
